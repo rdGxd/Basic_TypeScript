@@ -2,18 +2,6 @@
 
 Permite isolar de um objeto somente os conceitos que são necessário para o funcionamento do programa.
 
-```ts
-export class Pessoa {
-  private nome: string;
-  private sobrenome: string;
-
-  constructor(nome: string, sobrenome: string) {
-    this.nome = nome;
-    this.sobrenome = sobrenome;
-  }
-}
-```
-
 A abstração é um conceito fundamental na programação orientada a objetos (POO) que permite representar objetos do mundo real como entidades simplificadas e focar nos aspectos relevantes para o sistema em questão.
 
 Em termos simples, a abstração envolve identificar as características e comportamentos essenciais de um objeto e criar uma representação em forma de classe que encapsula essas informações. Essa classe abstrata é uma representação geral e genérica de um objeto, sem se preocupar com detalhes específicos de implementação.

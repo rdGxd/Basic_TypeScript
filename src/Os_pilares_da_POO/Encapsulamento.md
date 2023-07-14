@@ -2,24 +2,6 @@
 
 Visa ocultar partes internas de um objeto e exibir apenas o necessário para uso externo.
 
-```ts
-export class RemoteControl {
-  constructor(private powerStatus = false) {}
-
-  public turnOn(): void {
-    this.powerStatus = true;
-  }
-
-  public turnOff(): void {
-    this.powerStatus = false;
-  }
-
-  public getStatus(): boolean {
-    return this.powerStatus;
-  }
-}
-```
-
 O encapsulamento é um princípio importante na programação orientada a objetos (POO) que consiste em esconder os detalhes internos de um objeto e fornecer uma interface clara e controlada para interagir com ele.
 
 Em outras palavras, o encapsulamento envolve agrupar dados (atributos) e comportamentos (métodos) relacionados em uma única unidade, chamada de classe. Essa classe define as propriedades e operações disponíveis para o objeto criado a partir dela.

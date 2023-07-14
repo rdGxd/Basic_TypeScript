@@ -2,23 +2,6 @@
 
 Visa passar características de um objeto para outro
 
-```ts
-export abstract class Animal {
-  constructor(public name: string) {}
-  abstract makeNoise(): void;
-}
-export class Dog extends Animal {
-  makeNoise(): void {
-    console.log(`${this.name} está fazendo AU AU...`);
-  }
-}
-export class Cat extends Animal {
-  makeNoise(): void {
-    console.log(`${this.name} está fazendo MIAU...`);
-  }
-}
-```
-
 Herança é um conceito fundamental na programação orientada a objetos (POO) que permite que uma classe derive características e comportamentos de outra classe. Na herança, uma classe é chamada de classe base ou superclasse, e a classe que herda essas características é chamada de classe derivada ou subclasse.
 
 A classe derivada herda todos os atributos e métodos da classe base, o que significa que ela pode reutilizar o código existente e estender ou modificar seu comportamento conforme necessário. Isso promove a reutilização de código e a organização hierárquica de classes.

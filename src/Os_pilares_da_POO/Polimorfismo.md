@@ -2,20 +2,6 @@
 
 Algo que é polimorfo tem a habilidade de assumir diferentes formas.
 
-```ts
-class AnimalSounds {
-  public playSound(animal: Animal): void {
-    animal.makeNoise();
-  }
-}
-
-const dog = new Dog('Tina');
-const cat = new Cat('Suzy');
-const animalSounds = new AnimalSounds();
-animalSounds.playSound(dog); // Tina está fazendo AU AU...
-animalSounds.playSound(cat); // Suzy está fazendo MIAU...
-```
-
 Polimorfismo é um conceito importante na programação orientada a objetos (POO) que permite que diferentes objetos compartilhem o mesmo nome, mas se comportem de maneira diferente. Em outras palavras, você pode ter diferentes classes que implementam um método com o mesmo nome, mas cada classe pode executar o método de forma distinta.
 
 Vamos usar um exemplo para ilustrar isso. Imagine que você tem uma classe chamada "Animal" e duas classes derivadas dela, "Cachorro" e "Gato". Todas essas classes têm um método chamado "fazerBarulho".
