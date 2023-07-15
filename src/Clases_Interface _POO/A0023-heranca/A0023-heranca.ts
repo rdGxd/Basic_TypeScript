@@ -20,13 +20,13 @@ export class Pessoa {
   }
 }
 
-// Classe Aluno que herda de Pessoa e modifica o getNomeCompleto()
+// Classe Aluno que herda de Pessoa e sobrescreve o getNomeCompleto()
 export class Aluno extends Pessoa {
   getNomeCompleto(): string {
     return `Isso vem do aluno: ${this.nome} ${this.sobrenome}`;
   }
 }
-// Classe Cliente que herda Pessoa e modifica o getNomeCompleto()
+// Classe Cliente que herda Pessoa e sobrescreve o getNomeCompleto()
 export class Cliente extends Pessoa {
   getNomeCompleto(): string {
     return `Isso vem do cliente: ${this.nome} ${this.sobrenome}`;
