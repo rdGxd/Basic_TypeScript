@@ -58,5 +58,7 @@ const aluno = new Aluno('Rodrigo', 'Silva', 25, '111.111.111-11', '0001');
 const cliente = new Cliente('Carlos', 'Santos', 25, '000.000.000-00');
 
 console.log(aluno);
+console.log(pessoa);
+console.log(cliente);
 // console.log(pessoa);
 // console.log(cliente);
