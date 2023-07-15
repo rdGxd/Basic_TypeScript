@@ -1,4 +1,4 @@
-// A palavra SUPER ser para você ter acesso a SUPER CLASS de dentro de uma SUB CLASS
+// A palavra SUPER poder ser usada para você ter acesso a SUPER CLASS de dentro de uma SUB CLASS
 
 // Super classe -> Base class -> Parent class
 export class Pessoa {

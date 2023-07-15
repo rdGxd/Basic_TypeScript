@@ -3,7 +3,7 @@ export class Pessoa {
     private nome: string,
     private sobrenome: string,
     private idade: number,
-    // Por convenção colocar o  "_" antes da variável que esta sustentando o valor
+    // Por convenção coloca-se o  "_" antes do nome da variável que esta sustentando o valor
     private _cpf: string,
   ) {
     this.cpf = _cpf;
