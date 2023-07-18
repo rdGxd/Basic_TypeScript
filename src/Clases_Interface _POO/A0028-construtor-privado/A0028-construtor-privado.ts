@@ -26,6 +26,10 @@ Neste exemplo, a classe Database possui um construtor privado, o que significa q
     console.log(`Conectado: ${this.host}, ${this.user}, ${this.password}`);
   }
 
+  /*
+Dessa forma, o construtor privado permite que você controle como as instâncias da classe são criadas e evita que outras partes do código criem objetos de forma não intencional ou inadequada, garantindo maior encapsulamento e segurança no design da classe.
+  */
+
   // Factory Method -> Quando um método de uma classe cria um novo objeto
   static getDatabase(host: string, user: string, password: string): Database {
     if (Database.database) {
@@ -38,10 +42,6 @@ Neste exemplo, a classe Database possui um construtor privado, o que significa q
     return Database.database;
   }
 }
-
-/*
-Dessa forma, o construtor privado permite que você controle como as instâncias da classe são criadas e evita que outras partes do código criem objetos de forma não intencional ou inadequada, garantindo maior encapsulamento e segurança no design da classe.
-*/
 
 const db1 = Database.getDatabase('localhost', 'root', '123456');
 db1.connect();
