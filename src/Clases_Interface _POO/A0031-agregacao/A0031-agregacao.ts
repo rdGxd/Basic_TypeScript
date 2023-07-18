@@ -1,3 +1,5 @@
+// Um objeto precisa de outro objeto
+
 export class CarrinhoDeCompras {
   private readonly produtos: Produto[] = [];
 
