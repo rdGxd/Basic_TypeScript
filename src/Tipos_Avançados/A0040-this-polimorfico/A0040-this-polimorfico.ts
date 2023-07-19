@@ -1,54 +1,22 @@
-export class Calculadora {
-  constructor(public number: number) {}
+// Overload de funções -> uma função se comporta de maneira diferente baseado na quantidade parâmetros e nos tipos de parâmetros
 
-  add(n: number): this {
-    this.number += n;
-    return this;
-  }
-  sub(n: number): this {
-    this.number -= n;
-    return this;
-  }
-  div(n: number): this {
-    this.number /= n;
-    return this;
-  }
-  mul(n: number): this {
-    this.number *= n;
-    return this;
-  }
-}
+type Adder = {
+  (x: number): number;
+  (x: number, y: number): number;
+  (...arg: number[]): number;
+};
 
-// o THIS dessa sub calculadora é a SubCalculadora
-export class SubCalculadora extends Calculadora {
-  pow(n: number): this {
-    this.number **= n;
-    return this;
-  }
-}
+// X Sempre vai existir
+// Y pode ser opcional se for o valor nao for enviado vai o valor padrão vai ser 0 (y || 0)
+// ...args vai receber um array de números e fazer a soma
 
-const calculadora = new SubCalculadora(10);
-// Só é possível fazer chamadas em cadeias pq eu estou retornando o this
-calculadora.add(5).mul(2).div(2).sub(5).pow(2);
-console.log(calculadora);
-
-// Builder - GoF
-export class RequestBuilder {
-  private method: 'get' | 'post' | null = null;
-  private url: string | null = null;
-
-  setMethod(method: 'get' | 'post'): this {
-    this.method = method;
-    return this;
+const adder: Adder = (x: number, y?: number, ...args: number[]) => {
+  if (args.length > 0) {
+    return args.reduce((soma, valor) => soma + valor, 0) + x + (y || 0);
   }
-  setURL(url: string): this {
-    this.url = url;
-    return this;
-  }
-  send(): void {
-    console.log(`Enviando dados via ${this.method} para ${this.url}`);
-  }
-}
+  return x + (y || 0);
+};
 
-const request = new RequestBuilder(); // Builder
-request.setURL('http://google.com.br').setMethod('post').send();
+console.log(adder(1));
+console.log(adder(1, 2));
+console.log(adder(1, 2, 3));
