@@ -104,5 +104,5 @@
   },
   "include": [
     "./src"
-  ]
+, "src/Generics (GENERIC TYPE)/A0044-generics-2/A0044-generics-2.ts"  ]
 }
