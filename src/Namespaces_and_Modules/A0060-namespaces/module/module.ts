@@ -25,3 +25,5 @@ const person = new MyNamespace.PersonNameSpace(`Rodrigo`);
 console.log(person);
 console.log(MyNamespace.name);
 console.log(MyNamespace.OtherNamespace.name2);
+
+const constNameSpace = `Valor da const do name space`

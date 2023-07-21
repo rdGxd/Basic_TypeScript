@@ -5,3 +5,4 @@
 /// <reference path="module/module.ts" />
 
 console.log(MyNamespace.OtherNamespace.name2);
+consele.log(constNameSpace);
