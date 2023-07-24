@@ -1,4 +1,4 @@
-# Os princípios S.O.L.I.D são um conjunto de diretrizes de design de software que visam criar sistemas mais robustos, flexíveis e fáceis de manter. Esses princípios foram propostos por Robert C. Martin, também conhecido como Uncle Bob, e têm como objetivo principal melhorar a qualidade e a escalabilidade do código-fonte.
+## Os princípios S.O.L.I.D são um conjunto de diretrizes de design de software que visam criar sistemas mais robustos, flexíveis e fáceis de manter. Esses princípios foram propostos por Robert C. Martin, também conhecido como Uncle Bob, e têm como objetivo principal melhorar a qualidade e a escalabilidade do código-fonte.
 
 ## Acrônimo S.O.L.I.D representa os seguintes princípios:
 
@@ -12,4 +12,4 @@
 
 ## D - Princípio da Inversão de Dependência (Dependency Inversion Principle): Módulos de alto nível não devem depender de módulos de baixo nível; ambos devem depender de abstrações. Além disso, abstrações não devem depender de detalhes, mas os detalhes devem depender das abstrações. Isso promove a separação de preocupações e a flexibilidade do sistema.
 
-Ao seguir esses princípios, os desenvolvedores podem criar um código mais organizado, reutilizável e fácil de manter, tornando o software mais resiliente às mudanças e evoluções futuras. O respeito aos princípios S.O.L.I.D é considerado uma boa prática no desenvolvimento de software orientado a objetos.
+## Ao seguir esses princípios, os desenvolvedores podem criar um código mais organizado, reutilizável e fácil de manter, tornando o software mais resiliente às mudanças e evoluções futuras. O respeito aos princípios S.O.L.I.D é considerado uma boa prática no desenvolvimento de software orientado a objetos.
